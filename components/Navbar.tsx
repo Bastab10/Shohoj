@@ -13,7 +13,6 @@ const navLinks = [
   { label: "Contact", href: "/#contact" },
 ];
 
-// Replace with your actual business phone number.
 const BUSINESS_PHONE = "91XXXXXXXXXX";
 
 export default function Navbar() {
@@ -22,7 +21,6 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-[#10294C]/10 bg-white/95 backdrop-blur-md">
       <nav className="mx-auto flex h-[68px] max-w-[1600px] items-center justify-between gap-3 px-4 sm:h-[74px] sm:px-6 lg:h-[80px] lg:gap-5 lg:px-10">
-        {/* Brand logo */}
         <Link
           href="/#home"
           aria-label="সহজ — Home"
@@ -39,7 +37,6 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Desktop navigation */}
         <div className="hidden items-center gap-5 lg:flex xl:gap-7">
           {navLinks.map((link) => (
             <Link
@@ -52,7 +49,6 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Desktop action buttons */}
         <div className="hidden shrink-0 items-center gap-2 lg:flex xl:gap-3">
           <a
             href={`tel:+${BUSINESS_PHONE}`}
@@ -71,7 +67,6 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile menu button */}
         <button
           type="button"
           onClick={() => setMenuOpen((prev) => !prev)}
@@ -83,7 +78,6 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile navigation */}
       {menuOpen && (
         <div className="border-t border-[#10294C]/10 bg-white px-5 py-4 sm:px-6 lg:hidden">
           <div className="flex flex-col">
@@ -101,7 +95,6 @@ export default function Navbar() {
               </Link>
             ))}
 
-            {/* Mobile action buttons */}
             <div className="mt-4 grid grid-cols-2 gap-2">
               <a
                 href={`tel:+${BUSINESS_PHONE}`}

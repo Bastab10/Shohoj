@@ -1,6 +1,7 @@
 
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Phone } from "lucide-react";
+
+const BUSINESS_PHONE = "91XXXXXXXXXX";
 
 const services = [
   {
@@ -72,8 +73,6 @@ export default function Services() {
       className="bg-white py-20 text-[#10284C] sm:py-28"
     >
       <div className="mx-auto max-w-[1600px] px-5 sm:px-8 lg:px-14 xl:px-20">
-
-        {/* Section Heading */}
         <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between lg:mb-16">
           <div>
             <p className="mb-5 flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.22em] sm:text-xs">
@@ -96,16 +95,14 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {services.map((service) => (
-            <Link
+            <a
               key={service.number}
-              href="/#contact"
-              aria-label={`Book ${service.title}`}
+              href={`tel:+${BUSINESS_PHONE}`}
+              aria-label={`Call to enquire about ${service.title}`}
               className="group overflow-hidden border border-[#10284C]/10 bg-white"
             >
-              {/* Service Image */}
               <div className="relative h-56 overflow-hidden bg-white sm:h-60">
                 <img
                   src={service.image}
@@ -123,7 +120,6 @@ export default function Services() {
                 </span>
               </div>
 
-              {/* Service Details */}
               <div className="p-5 sm:p-6">
                 <h3 className="font-serif text-2xl leading-tight tracking-tight">
                   {service.title}
@@ -133,14 +129,17 @@ export default function Services() {
                   {service.description}
                 </p>
 
-                <p className="mt-5 border-t border-[#10284C]/10 pt-4 text-[10px] font-bold uppercase tracking-[0.15em] text-[#10284C]/70">
-                  Explore service
+                <p className="mt-5 flex items-center justify-between border-t border-[#10284C]/10 pt-4 text-[10px] font-bold uppercase tracking-[0.12em] text-[#B58A12]">
+                  <span className="flex items-center gap-2">
+                    <Phone size={13} />
+                    Call for Service
+                  </span>
+                  <ArrowUpRight size={15} />
                 </p>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
-
       </div>
     </section>
   );

@@ -12,7 +12,6 @@ import {
   MapPin,
   Clock3,
   MessageCircle,
-  CheckCircle2,
 } from "lucide-react";
 
 const BUSINESS_PHONE = "91XXXXXXXXXX";
@@ -88,8 +87,6 @@ function ContactContent() {
       className="scroll-mt-24 bg-white py-16 text-[#10284C] sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-14 xl:px-20">
-
-        {/* Heading */}
         <div className="mb-12 border-b border-[#10284C]/10 pb-10 sm:mb-16 sm:pb-12">
           <p className="mb-5 flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.22em] text-[#10284C]/60 sm:text-xs">
             <span className="h-px w-9 bg-[#DCAF24]" />
@@ -105,14 +102,15 @@ function ContactContent() {
               </span>
             </h2>
 
-           
+            <p className="max-w-md text-sm leading-7 text-[#10284C]/65 sm:text-base">
+              No need to search everywhere. Tell us what you need,
+              and let সহজ help you explore the right service for
+              your home, daily needs or special occasion.
+            </p>
           </div>
         </div>
 
-        {/* Contact Layout */}
         <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
-
-          {/* Contact Information */}
           <div>
             <h3 className="font-serif text-3xl sm:text-4xl">
               Get in touch
@@ -208,7 +206,6 @@ function ContactContent() {
             </div>
           </div>
 
-          {/* Enquiry Form */}
           <div className="border border-[#10284C]/10 p-5 sm:p-8 lg:p-10">
             <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#B58A12]">
               Service Enquiry
@@ -345,7 +342,6 @@ function ContactContent() {
           </div>
         </div>
 
-        {/* Closing Message */}
         <div className="mt-16 border-t border-[#10284C]/10 pt-7 sm:mt-20">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>

@@ -33,14 +33,12 @@ export default function Hero() {
       id="home"
       className="relative overflow-hidden bg-white text-[#10294C]"
     >
-      {/* Decorative circle */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -left-32 top-24 h-[360px] w-[360px] rounded-full border border-[#DCAF24]/20"
       />
 
       <div className="mx-auto grid min-h-[calc(100svh-80px)] max-w-[1600px] items-center gap-8 px-5 py-7 sm:px-8 sm:py-10 lg:grid-cols-2 lg:gap-8 lg:px-10 lg:py-8 xl:px-12">
-        {/* Left content */}
         <div className="relative z-10">
           <div className="mb-4 flex items-center gap-3 sm:mb-5">
             <span className="h-[2px] w-8 bg-[#DCAF24]" />
@@ -65,7 +63,6 @@ export default function Hero() {
             everyday service needs together in one place.
           </p>
 
-          {/* Buttons */}
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link
               href="/#services"
@@ -84,7 +81,6 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Trust indicators */}
           <div className="mt-7 grid max-w-[500px] grid-cols-3 border-t border-[#10294C]/10 pt-4 sm:mt-8">
             <div className="pr-2 sm:pr-4">
               <ShieldCheck
@@ -124,13 +120,11 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right image collage */}
         <div className="relative mx-auto mt-2 h-[390px] w-full max-w-[500px] sm:h-[470px] lg:mt-0 lg:h-[450px] xl:h-[490px]">
           <div className="absolute right-[5%] top-[5%] h-[82%] w-[78%] rounded-t-[48%] rounded-b-lg bg-[#F5F1E8]" />
 
           <div className="absolute right-[8%] top-[8%] h-16 w-16 rounded-full border border-[#DCAF24]/70 sm:h-24 sm:w-24" />
 
-          {/* Painting photo */}
           <div className="absolute left-0 top-[5%] z-10 w-[55%]">
             <div className="aspect-[4/5] overflow-hidden rounded-t-[100px] rounded-b-md bg-[#F1F1EF] shadow-lg shadow-[#10294C]/10">
               <img
@@ -144,7 +138,6 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Tiffin photo */}
           <div className="absolute right-0 top-[17%] z-20 w-[42%]">
             <div className="aspect-[4/5] overflow-hidden rounded-sm border-4 border-white bg-[#F1F1EF] shadow-xl shadow-[#10294C]/10 sm:border-[6px]">
               <img
@@ -158,7 +151,6 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Catering photo */}
           <div className="absolute bottom-[2%] left-[17%] z-30 w-[60%]">
             <div className="aspect-[16/9] overflow-hidden rounded-sm border-4 border-white bg-[#F1F1EF] shadow-xl shadow-[#10294C]/15 sm:border-[6px]">
               <img
@@ -172,7 +164,6 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Brand note */}
           <div className="absolute bottom-[1%] right-0 z-40 max-w-[115px] rotate-[-5deg] rounded-sm bg-[#DCAF24] px-3 py-2.5 text-center shadow-md sm:bottom-[4%] sm:right-[-1%] sm:max-w-[135px] sm:px-4 sm:py-3">
             <p className="font-serif text-sm italic leading-tight text-[#10294C] sm:text-lg">
               Everyday needs.
@@ -184,14 +175,12 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Small brand seal */}
           <div className="absolute left-[3%] top-0 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-[#DCAF24] font-serif text-xl font-bold text-[#10294C] shadow-md sm:h-12 sm:w-12 sm:text-2xl">
             স
           </div>
         </div>
       </div>
 
-      {/* Bottom accent */}
       <div className="h-[3px] w-full bg-gradient-to-r from-[#10294C] via-[#DCAF24] to-white" />
     </section>
   );

@@ -114,7 +114,7 @@ export default function Hero() {
               />
               <p className="text-xs font-bold sm:text-sm">Local</p>
               <p className="mt-1 text-[10px] leading-4 text-[#61718A] sm:text-xs">
-                Guwahati, Assam
+                Tezpur, Assam
               </p>
             </div>
           </div>

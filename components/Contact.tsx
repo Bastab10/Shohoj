@@ -124,7 +124,7 @@ function ContactContent() {
                 <div>
                   <h4 className="text-sm font-semibold">Our Location</h4>
                   <p className="mt-1 text-sm leading-6 text-[#10284C]/65">
-                    Guwahati, Assam, India
+                    Tezpur, Assam, India
                   </p>
                 </div>
               </div>

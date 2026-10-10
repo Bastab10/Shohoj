@@ -14,8 +14,8 @@ import {
   MessageCircle,
 } from "lucide-react";
 
-const BUSINESS_PHONE = "91XXXXXXXXXX";
-const BUSINESS_EMAIL = "your-email@example.com";
+const BUSINESS_PHONE = "916001353032";
+const BUSINESS_EMAIL = "bastabs398@gmail.com";
 
 const services = [
   "Painting Services",
@@ -54,13 +54,8 @@ function ContactContent() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    if (
-      BUSINESS_PHONE.includes("X") ||
-      !/^\d{10,15}$/.test(BUSINESS_PHONE)
-    ) {
-      alert(
-        "Please add your actual WhatsApp business number in Contact.tsx."
-      );
+    if (!/^\d{10,15}$/.test(BUSINESS_PHONE)) {
+      alert("Please check your WhatsApp business number in Contact.tsx.");
       return;
     }
 
@@ -103,9 +98,9 @@ function ContactContent() {
             </h2>
 
             <p className="max-w-md text-sm leading-7 text-[#10284C]/65 sm:text-base">
-              No need to search everywhere. Tell us what you need,
-              and let সহজ help you explore the right service for
-              your home, daily needs or special occasion.
+              No need to search everywhere. Tell us what you need, and let
+              সহজ help you explore the right service for your home, daily
+              needs or special occasion.
             </p>
           </div>
         </div>
@@ -117,8 +112,8 @@ function ContactContent() {
             </h3>
 
             <p className="mt-4 max-w-sm text-sm leading-7 text-[#10284C]/65">
-              Have a question or need more than one service?
-              Contact us and share your requirements.
+              Have a question or need more than one service? Contact us and
+              share your requirements.
             </p>
 
             <div className="mt-8 space-y-0 border-t border-[#10284C]/10">
@@ -140,18 +135,12 @@ function ContactContent() {
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold">Call Us</h4>
-                  {BUSINESS_PHONE.includes("X") ? (
-                    <p className="mt-1 text-sm text-[#10284C]/55">
-                      Add your business phone number
-                    </p>
-                  ) : (
-                    <a
-                      href={`tel:+${BUSINESS_PHONE}`}
-                      className="mt-1 block text-sm text-[#10284C]/65"
-                    >
-                      +{BUSINESS_PHONE}
-                    </a>
-                  )}
+                  <a
+                    href={`tel:+${BUSINESS_PHONE}`}
+                    className="mt-1 block text-sm text-[#10284C]/65"
+                  >
+                    +{BUSINESS_PHONE}
+                  </a>
                 </div>
               </div>
 
@@ -161,18 +150,12 @@ function ContactContent() {
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold">Email Us</h4>
-                  {BUSINESS_EMAIL === "your-email@example.com" ? (
-                    <p className="mt-1 text-sm text-[#10284C]/55">
-                      Add your business email
-                    </p>
-                  ) : (
-                    <a
-                      href={`mailto:${BUSINESS_EMAIL}`}
-                      className="mt-1 block break-all text-sm text-[#10284C]/65"
-                    >
-                      {BUSINESS_EMAIL}
-                    </a>
-                  )}
+                  <a
+                    href={`mailto:${BUSINESS_EMAIL}`}
+                    className="mt-1 block break-all text-sm text-[#10284C]/65"
+                  >
+                    {BUSINESS_EMAIL}
+                  </a>
                 </div>
               </div>
 
@@ -200,8 +183,8 @@ function ContactContent() {
                 <strong className="text-[#10284C]">
                   Simple and convenient.
                 </strong>{" "}
-                Submit your enquiry and continue the conversation
-                through WhatsApp.
+                Submit your enquiry and continue the conversation through
+                WhatsApp.
               </p>
             </div>
           </div>
@@ -328,15 +311,15 @@ function ContactContent() {
 
               <button
                 type="submit"
-                className="flex w-full items-center justify-center gap-3 bg-[#10284C] px-5 py-4 text-sm font-semibold text-white"
+                className="flex w-full items-center justify-center gap-3 bg-[#10284C] px-5 py-4 text-sm font-semibold text-white transition hover:bg-[#1B3C68]"
               >
                 Send Enquiry on WhatsApp
                 <ArrowUpRight size={18} />
               </button>
 
               <p className="text-center text-xs leading-5 text-[#10284C]/50">
-                WhatsApp will open with your enquiry ready to send.
-                You can review it before sending.
+                WhatsApp will open with your enquiry ready to send. You can
+                review it before sending.
               </p>
             </form>
           </div>
@@ -348,6 +331,7 @@ function ContactContent() {
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#B58A12]">
                 সহজ · Shohoj
               </p>
+
               <h3 className="mt-3 font-serif text-3xl leading-tight sm:text-4xl">
                 Less searching.
                 <span className="italic text-[#DCAF24]">

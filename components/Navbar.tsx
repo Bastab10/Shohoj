@@ -4,7 +4,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Menu, X, Phone } from "lucide-react";
+import {
+  ArrowUpRight,
+  Menu,
+  X,
+  Phone,
+  Mail,
+} from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "/#home" },
@@ -13,7 +19,8 @@ const navLinks = [
   { label: "Contact", href: "/#contact" },
 ];
 
-const BUSINESS_PHONE = "91XXXXXXXXXX";
+const BUSINESS_PHONE = "916001353032";
+const CONTACT_EMAIL = "bastabs398@gmail.com";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,6 +63,14 @@ export default function Navbar() {
           >
             <Phone size={15} />
             Call Now
+          </a>
+
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#10294C]/15 bg-white px-3 py-2.5 text-xs font-bold text-[#10294C] transition hover:border-[#DCAF24] hover:bg-[#FFFAEA] xl:px-4 xl:text-sm"
+          >
+            <Mail size={15} />
+            Email Us
           </a>
 
           <Link
@@ -105,10 +120,19 @@ export default function Navbar() {
                 Call Now
               </a>
 
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center justify-center gap-2 rounded-lg border border-[#10294C]/15 bg-white px-3 py-3 text-xs font-bold text-[#10294C] transition hover:bg-[#FFFAEA]"
+              >
+                <Mail size={15} />
+                Email Us
+              </a>
+
               <Link
                 href="/#contact"
                 onClick={() => setMenuOpen(false)}
-                className="flex items-center justify-center gap-1.5 rounded-lg bg-[#10294C] px-3 py-3 text-xs font-bold text-white transition hover:bg-[#1B3C68]"
+                className="col-span-2 flex items-center justify-center gap-2 rounded-lg bg-[#10294C] px-3 py-3 text-xs font-bold text-white transition hover:bg-[#1B3C68]"
               >
                 Book a Service
                 <ArrowUpRight size={15} />
